@@ -1,7 +1,6 @@
-@mixin before_circle {
+@mixin before_circle_text {
   &:before {
     position: absolute;
-
     content: "";
     width: 36px;
     height: 36px;
@@ -12,11 +11,30 @@
     background: $main-color;
   }
 }
-@mixin for_before_circle {
-  &__subtitle {
-    position: relative;
-    z-index: 1;
-    padding-left: 10px;
-    @include before_circle;
+@mixin before_circle_text-center {
+  &:before {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    background: $main-color;
+  }
+}
+@mixin before_circle_icon {
+  &:before {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    top: -53%;
+    left: 0;
+    z-index: -1;
+    background: $main-color;
   }
 }
