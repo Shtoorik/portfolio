@@ -13,7 +13,7 @@
   &__item {
     padding-left: 25px;
     display: grid;
-      row-gap: 5px;
+    row-gap: 5px;
     grid-template: minmax(21px, auto) minmax(18px, auto) / 200px 150px;
   }
   &__price-tag {
